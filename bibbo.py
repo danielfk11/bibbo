@@ -2,7 +2,6 @@ class Bibbo:
     def __init__(self):
         self.fome = 20
         self.saude = 80
-        self.idade = 1
     def mfome(self, valorF):
         self.fome += valorF
         if self.fome > 100:
@@ -15,8 +14,6 @@ class Bibbo:
             self.saude = 100
         elif self.saude < 0:
             self.saude = 0    
-    def midade(self):
-        self.idade += 1
     def MostrarNome(self):
         return self.nome
     def MostrarFome(self):
@@ -52,8 +49,7 @@ while (fun.saude > 0) and (fun.fome < 100):
        \  |  /
      ___)=|=(___
     {____/ \____}
-
-     \nOlá meu nome é Bibbo. O que você deseja fazer comigo agora? \n8- Alimentar (-10 de fome)\n9- Dormir (+10 de saúde)\n1- Visualizar Fome\n2- Visualizar Humor\n3- Visualizar Saude\n4- Visualizar Bibbo\n5- Visualizar Idade\nResposta: """)
+     \nOlá meu nome é Bibbo. O que você deseja fazer comigo agora? \n8- Alimentar (-10 de fome)\n9- Dormir (+10 de saúde)\n1- Visualizar Fome\n2- Visualizar Humor\n3- Visualizar Saude\n4- Visualizar Bibbo\nResposta: """)
     
     print()
     if resposta == '8':
@@ -70,8 +66,6 @@ while (fun.saude > 0) and (fun.fome < 100):
         print('saude', fun.MostrarSaude())
     elif resposta == '4':
         print('Meu nome e bibbo venha bricar comigo!')
-    elif resposta == '5':
-        print('Idade', fun.midade())
     else:
         print('Escolha uma opcao valida por favor.')
 else: 
